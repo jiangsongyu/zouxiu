@@ -1,0 +1,17 @@
+/* 
+* @Author: Marte
+* @Date:   2017-09-15 11:22:27
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-25 20:39:47
+*/
+.JA {position:relative; overflow:hidden; }
+.JA ul { position: relative; }
+.JA ul img { position: absolute; top: 0;z-index: ; }
+.JA > span { position: absolute; left: 10px; top: 50%; margin-top: -30px; width: 30px; height: 60px; line-height: 60px; text-align: center; background-color: rgba(0, 0, 0, 0.3); color: #fff; }
+.JA > span.next { left: auto; right: 10px; }
+.JA .page { position: absolute; left: 50%; bottom:2%; transform: translate(-50%, 0); }
+.JA .page span { display: inline-block; margin: 0 5px; width: 10px; height: 10px; line-height: 20px; text-align: center; background-color: rgba(255, 255, 255, 0.3); border-radius: 50%; border:3px solid rgba(255,255,255,0.0);border-radius: 50%;cursor: pointer; }
+.JA .page span.active {border:3px solid rgba(255,255,255,1);background-color: rgba(255, 255, 0, 0.3);  }
+.JA .dian div { width: 30px; height: 50px; background-color: rgba(255, 255, 255, 0.3); position: absolute; font-size: 20px; line-height: 50px; text-align: center; color: #ddd; display: none; }
+.JA .dian .qian { top: 50%; left: 24%; transform: translate(0, -50%); cursor: pointer; }
+.JA .dian .hou { top: 50%; right: 6%; transform: translate(0, -50%); cursor: pointer; }
