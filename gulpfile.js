@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-08-29 17:15:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-23 11:56:45
+* @Last Modified time: 2017-09-27 10:17:00
 */
 // * gulp
 // * gulp-sass
@@ -55,7 +55,7 @@ gulp.task('server',function(){
     browserSync({
         proxy:'http://localhost:0128',
 
-        port:0128,
+        port:0129,
 
         files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']
     });

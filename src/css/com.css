@@ -4,7 +4,7 @@ a { text-decoration: none; }
 
 ul, li { list-style: none; }
 
-img { display: block; border: 0 none; margin: 0; padding: 0; }
+img { border: 0 none; margin: 0; padding: 0; }
 
 .fl { float: left; }
 

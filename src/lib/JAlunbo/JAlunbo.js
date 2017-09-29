@@ -2,9 +2,10 @@
 * @Author: Marte
 * @Date:   2017-09-15 11:25:44
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-25 16:29:18
+* @Last Modified time: 2017-09-27 09:43:45
 */
 // jQuery(function($){
+
   function JA(options){
         var {
             // 图片列表

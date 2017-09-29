@@ -2,9 +2,9 @@
 * @Author: Marte
 * @Date:   2017-09-15 11:22:27
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-25 20:39:47
+* @Last Modified time: 2017-09-27 09:51:42
 */
-.JA {position:relative; overflow:hidden; }
+.JA {position:relative; overflow:hidden; ;}
 .JA ul { position: relative; }
 .JA ul img { position: absolute; top: 0;z-index: ; }
 .JA > span { position: absolute; left: 10px; top: 50%; margin-top: -30px; width: 30px; height: 60px; line-height: 60px; text-align: center; background-color: rgba(0, 0, 0, 0.3); color: #fff; }

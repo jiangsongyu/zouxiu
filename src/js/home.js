@@ -2,7 +2,7 @@
 // jQuery(function($){
 // 
 require(['config'],function(){
-    require(['jquery','com','JAlunbo'],function($){
+    require(['jquery','com'],function($){
 
       an({ 
                container:['.banner'],
@@ -55,6 +55,7 @@ require(['config'],function(){
         $corb.css('z-index','0');
         $corrr.css('z-index','0');
     });
+    
 
      var $backT = $cbl.last();
      $backT.on('click',function(){
