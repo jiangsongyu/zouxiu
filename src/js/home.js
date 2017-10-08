@@ -2,8 +2,21 @@
 // jQuery(function($){
 // 
 require(['config'],function(){
-    require(['jquery','com'],function($){
-
+    require(['jquery','com','../lib/common'],function($){
+      if(Cookie.get("user")!=''){
+        var $usebox = $('#header .top_t .useb');
+        var user = Cookie.get("user");
+        $usebox.html(`
+          <a>${user}</a>
+          <a class="tuichu">注销</a>
+          `);
+      };
+      var $zhux = $('#header .top_t .useb .tuichu');
+      console.log($zhux);
+      $zhux.on('click',function(){
+        Cookie.remove('user');
+        window.location.reload();
+      })
       an({ 
                container:['.banner'],
 

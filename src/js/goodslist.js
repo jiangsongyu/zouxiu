@@ -2,11 +2,27 @@
 * @Author: Marte
 * @Date:   2017-09-27 09:08:52
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-28 16:34:50
+* @Last Modified time: 2017-10-08 11:23:58
 */
 
 require(['config'],function(){
-    require(['jquery','com'],function($){
+    require(['jquery','com','../lib/common'],function($){
+        if(Cookie.get("user")!=''){
+          var $usebox = $('#header .top_t .useb');
+          var user = Cookie.get("user");
+          $usebox.html(`
+            <a>${user}</a>
+            <a class="tuichu">注销</a>
+            `);
+        };
+        var $zhux = $('#header .top_t .useb .tuichu');
+        console.log($zhux);
+        $zhux.on('click',function(){
+            var date = new Date();
+            date.setDate(date.getDate()-10);
+            document.cookie = 'user=' + 'use' + ";expires=" +date.toString()+";path=/";
+            window.location.reload();
+        });
         var datalist = document.querySelector('#nav .nav_c .hezi_c');
         var page = document.querySelector('#nav .nav_b .page');
 
@@ -35,7 +51,6 @@ require(['config'],function(){
         var qty = 32;
         var paixu = 1; 
         function Msg(pageNo,paixu){
-            
             $.ajax({
                 url: '../api/goods.php',
                 type: 'GET',

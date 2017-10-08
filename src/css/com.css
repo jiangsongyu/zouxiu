@@ -38,6 +38,8 @@ img { border: 0 none; margin: 0; padding: 0; }
 
 #header .top_t .contanner .lig a:hover { color: #666; }
 
+#header .top_t .contanner .useb a { cursor: pointer; }
+
 #header .top_t .contanner div { float: right; position: relative; }
 
 #header .top_t .contanner div a { color: #ccbeb8; line-height: 28px; padding: 0 10px; font-size: 14px; }

@@ -1,5 +1,21 @@
 #header .top_bb .top_b .nav_l .lis { display: none; }
 
+#nav .cbl { position: fixed; bottom: 55px; right: 0; display: block; }
+
+#nav .cbl a { width: 100%; display: block; padding: 13px 0; position: relative; background: #eee; margin-bottom: 2px; }
+
+#nav .cbl a .spc1 { text-align: center; width: 200px; line-height: 21px; color: #333; font-size: 18px; margin: 0 auto; width: 45px; height: 21px; display: block; background-position: -118px 0; }
+
+#nav .cbl a .spc2 { display: none; background-color: #fff; border: 1px solid #ddd; border-right: 0; text-align: center; position: absolute; right: 48px; bottom: 0; float: left; width: 100px; height: 45px; line-height: 45px; color: #333; font-size: 14px; }
+
+#nav .cbl a .spc3 { display: none; background-color: #fff; border: 1px solid #ddd; border-right: 0; text-align: center; position: absolute; right: 48px; bottom: 0; float: left; }
+
+#nav .cbl a .spc3 span { color: #333; margin-top: 10px; }
+
+#nav .cbl a:hover { background-color: #666; }
+
+#nav .cbl a:hover div { color: #fff; }
+
 #nav .shp { overflow: hidden; margin-bottom: 30px; }
 
 #nav .shp .pictl { margin-left: 90px; margin-top: 50px; float: left; }
@@ -8,7 +24,7 @@
 
 #nav .shp .shpr { width: 570px; float: right; position: relative; z-index: 0; }
 
-#nav .shp .shpr .rs { width: 570px; float: right; position: relative; z-index: 0; }
+#nav .shp .shpr .rs { margin-top: 100px; width: 570px; float: right; position: relative; z-index: 0; margin-bottom: 30px; }
 
 #nav .shp .shpr .rs .p_title { font-size: 14px; font-weight: bold; color: #000; line-height: 25px; border-bottom: 1px solid #e5e5e5; padding: 0 0 5px 0px; float: left; width: 560px; }
 
@@ -22,6 +38,8 @@
 
 #nav .shp .shpr .rs .pro_pric { padding: 20px 0 20px 0px; position: relative; z-index: 2; float: left; }
 
+#nav .shp .shpr .rs .pro_pric span { float: left; line-height: 30px; font-size: 12px; color: #646464; }
+
 #nav .shp .shpr .rs .pro_pric .op { color: #ea7514; }
 
 #nav .shp .shpr .rs .pro_pric .di { font-size: 12px; color: #646464; }
@@ -31,6 +49,48 @@
 #nav .shp .shpr .rs .pro_pric .n_pr { color: #cf1700; height: 30px; font-size: 24px; font-family: Tahoma, Geneva, sans-serif; float: left; }
 
 #nav .shp .shpr .rs .pro_pric .prs { float: left; line-height: 30px; font-size: 12px; color: #646464; }
+
+#nav .shp .shpr .rs .pro_pric .did { color: #ea7514; font-size: 15px; font-family: simsun; }
+
+#nav .shp .shpr .rs .pro_pric .cxs { float: left; line-height: 23px; }
+
+#nav .shp .shpr .rs .pro_pric .cxs ul li { display: inline; text-align: center; }
+
+#nav .shp .shpr .rs .pro_pric .cxs ul li a { color: #646464; border: 2px solid #ff6701; font-size: 12px; height: 20px; padding: 1px 7px; line-height: 20px; width: auto; }
+
+#nav .shp .shpr .rc { margin-bottom: 100px; margin-top: 50px; display: table; float: left; border-top: 1px solid #e5e5e5; }
+
+#nav .shp .shpr .rc .pro_sss { padding: 10px 0; color: #646464; }
+
+#nav .shp .shpr .rc .pro_sss .chi { width: 60px; float: left; line-height: 25px; text-align: left; }
+
+#nav .shp .shpr .rc .pro_sss .bxs { float: left; width: 440px; line-height: 23px; }
+
+#nav .shp .shpr .rc .pro_sss .bxs ul li { display: inline; text-align: center; }
+
+#nav .shp .shpr .rc .pro_sss .bxs ul li a { cursor: pointer; float: left; display: block; border: 1px solid #ccc; font-size: 12px; height: 20px; padding: 2px 8px; line-height: 20px; width: auto; margin: 0 10px 5px 0; background: #fff; overflow: hidden; text-align: center; color: #646464; }
+
+#nav .shp .shpr .rc .pro_sss .bxs ul li a:hover { border: 2px solid #ff6701; font-size: 12px; height: 20px; padding: 1px 7px; line-height: 20px; width: auto; }
+
+#nav .shp .shpr .rc .pro_sss .bxs ul li .on { border: 2px solid #ff6701; font-size: 12px; height: 20px; padding: 1px 7px; line-height: 20px; width: auto; }
+
+#nav .shp .shpr .rc .boxbu { height: 38px; clear: both; position: relative; z-index: 1; /* width: 380px; */ padding: 20px 0 15px; }
+
+#nav .shp .shpr .rc .boxbu .bu1 { text-align: center; cursor: pointer; line-height: 35px; font-weight: 800; color: #fff; background-color: #ea7414; height: 36px; width: 153px; display: block; float: left; position: relative; margin-right: 15px; }
+
+#nav .shp .shpr .rc .boxbu .bu1:hover { background-color: #FF0000; }
+
+#nav .shp .shpr .rc .boxbu .bu2 { text-align: center; cursor: pointer; line-height: 35px; font-weight: 800; color: #fff; background-color: #58bc58; height: 36px; width: 153px; display: block; float: left; position: relative; margin-right: 15px; }
+
+#nav .shp .shpr .rc .boxbu .bu2:hover { background-color: #00D936; }
+
+#nav .shp .shpr .rc .boxbu .bu3 { text-align: center; cursor: pointer; color: #666; line-height: 35px; width: 61px; height: 36px; display: inline-block; }
+
+#nav .shp .shpr .rc .dianh { color: #ea7414; font-size: 14px; }
+
+#nav .shp .shpr .rc .dianh strong { font-size: 16px; }
+
+#nav .shp .shpr .rc .dianh span { color: #7e7e7e; font-size: 12px; }
 
 #nav .shp .shpr .rx { margin-top: 30px; border-top: 1px solid #e5e5e5; padding-top: 20px; }
 

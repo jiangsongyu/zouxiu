@@ -1,0 +1,122 @@
+#header{    border-bottom: 1px solid #000;
+    width: 950px;
+    margin: 0 auto;
+    background: #fff;
+    height: 64px;
+    padding-top: 12px;
+    z-index: 99;
+    .tt{
+        img{float: left;margin-left:20px;}
+        .tr{
+            margin-left: 340px;
+            margin-top: 10px;
+            float: left;
+            width: 600px;
+            color: #151515;
+            p{
+                font-size:14px;
+            }
+            .pt{margin-bottom:10px;
+                a{color:#151515;margin-left:10px}
+                b{color:#F26521;}
+            }
+            .pb{a{color:#151515;}}
+        }
+    }
+}
+
+#zhong{
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    .xhz{
+        height: 40px;
+        padding-top: 15px;
+        .ulz{
+            width: 950px;
+            height: 33px;
+            margin: 0 auto;
+            .on{
+                background: #82bf38;
+                color: #fff;
+            }
+            li{
+                float: left;
+                width: 316px;
+                background: #e2e2e2;
+                height: 24px;
+                text-align: center;
+                line-height: 24px;
+                font-size: 14px;
+                font-weight: bold;
+                span{
+                    width: 27px;
+                    height: 32px;
+                    float: right;
+                    overflow: hidden;
+                    position: relative;
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+}
+#shp{
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    .shangp{text-align:center;
+        line-height:90px;
+        margin-top: 20px;
+        height: 90px;
+        background: #F6F6F6;
+        border: 1px solid #d6d3d3;
+        a{color:#F26521;}
+        .qhz{
+            text-align: center;
+            line-height: 25px;
+            padding: 10px;
+           img{float: left;
+                padding: 0px 10px 0px;
+                width: 62px;height: 82px;
+                margin-left:20px;
+                margin-right:20px;
+            } 
+            .wez{
+                margin-left:100px;
+                margin-right:100px;
+                float: left;
+                text-align: left;
+                padding: 0px 10px 0px;
+            }
+        }
+        .qian{float: left;
+            text-align: center;
+            line-height: 25px;
+            padding: 0px 10px 0px;
+            del{
+                font-size:14px;color:#ccc;
+            }
+        }
+        .shan{float: right;
+            text-align: center;
+            line-height: 53px;
+            padding: 0 10px 0;
+            a{cursor: pointer; }
+        }
+        
+    }
+}
+#foot{
+    color: #7D7D7D;
+    line-height: 22px;
+    margin: 15px auto 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 950px;
+    border-top: 1px solid #999;
+    padding-top: 10px;
+    p{
+
+    }
+}
