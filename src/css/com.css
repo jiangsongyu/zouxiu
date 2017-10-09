@@ -124,6 +124,8 @@ img { border: 0 none; margin: 0; padding: 0; }
 
 #header .top_bb .top_b .nav_l .lis .box2 .he .tu p { display: inline; margin-top: 5px; }
 
+#header .top_bb .top_b .nav_l .lis .box2 .he .tu img { display: block; }
+
 #header .top_bb .top_b .nav_l .lis .box2 .he .tu2 .wen { margin-left: 35px; margin-top: 5px; }
 
 #header .top_bb .top_b .nav_l .lis .box2 .he .tu2 .wen a { font-size: 12px; display: inline-block; color: #99857a; }
