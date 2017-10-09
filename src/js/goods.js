@@ -2,11 +2,30 @@
 * @Author: Marte
 * @Date:   2017-09-28 14:47:49
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-10-08 11:24:17
+* @Last Modified time: 2017-10-09 19:05:04
 */
 
 require(['config'],function(){
     require(['jquery','com','../lib/common','../lib/AnCarousel/Ancarousel','../lib/common'],function($){
+
+        $('#nav .tabb .tou li').eq(0).addClass("active");
+        // $('.tab .content').not(':first-of-type').hide();
+        $('#nav .tabb .content').first().nextAll().hide();
+        
+        $('#nav .tabb .tb li').on('click',function(){
+            console.log(777);
+            // 获取当前对应索引值
+            var idx = $(this).index();
+            console.log(idx);
+            // 给当前高亮，去除其他高亮
+            $(this).addClass('active').siblings('li').removeClass('active');
+
+            $('.tabb .content').eq(idx).show().siblings('.content').hide();
+        });
+
+
+
+
         if(Cookie.get("user")!=''){
           var $usebox = $('#header .top_t .useb');
           var user = Cookie.get("user");
@@ -81,13 +100,55 @@ require(['config'],function(){
 
                 var $bu2 = $('.shpr .rc .boxbu .bu2');
 
+
+
+                var arr_goods = [];
+
+                // 先查看当前购物车有无cookie
+                var cookies = document.cookie;
+
+                if(cookies.length>0){
+                    cookies = cookies.split('; ');
+                    cookies.forEach(function(item){
+                        var arr = item.split('=');
+
+                        if(arr[0] == 'cartlist'){
+                            arr_goods = JSON.parse(arr[1]);
+                        }
+                    })
+                };
                 $bu2.on('click',function(){
-                    Cookie.set('tittle',[rest.tittle,rest.jieshao]);
-                    Cookie.set('jieshao',rest.jieshao);
-                    Cookie.set('img',iurl1);
-                    Cookie.set('np',rest.new_price);
-                    Cookie.set('price',rest.price);
-                    Cookie.set('color',rest.color);
+                    
+                    
+                    for(var i=0;i<arr_goods.length;i++){
+                        if(arr_goods[i].id == id){
+                            arr_goods[i].qty++;
+                            break;
+                        }
+                    }
+
+                    // arr_goods中不存在当前商品
+                    if(i===arr_goods.length){
+                        // 获取点击按钮对应商品信息
+                        var goods = {
+                            // 商品id
+                            id:rest.id,
+                            title:rest.tittle,
+                            jieshao:rest.jieshao,
+                            colos:rest.color,
+                            imgurl:iurl1,
+                            price:rest.price,
+                            sale:rest.new_price,
+                            qty:1
+                        }
+
+
+
+                        arr_goods.push(goods);
+                    }
+                    document.cookie = 'cartlist=' + JSON.stringify(arr_goods);
+
+
                     var copi = document.createElement("img");
                     copi.src=iurl1;
                     

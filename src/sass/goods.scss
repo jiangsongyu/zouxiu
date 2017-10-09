@@ -67,9 +67,9 @@
         a:hover div{color:#fff;}
     }
     .shp{
-    overflow: hidden;
-   
-    margin-bottom: 30px;
+        overflow: hidden;
+       
+        margin-bottom: 30px;
         .pictl{
                 margin-left: 90px;
                 margin-top: 50px;
@@ -137,7 +137,7 @@
                     .op{color: #ea7514;}
                     .di{font-size: 12px;color: #646464;}
                     .spw{
-                        width: 80px;
+                        width: 93px;
                         line-height: 30px;
                         text-align: left;
                         display: inline-block;
@@ -338,6 +338,45 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .tabb{
+        width: 1000px;
+        z-index: 9999;
+        .tb{background: #efefef;
+            height: 38px;
+            line-height: 38px;
+            position: relative;
+            .tou{
+                margin: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                .active{
+                    color:#fff;
+                    background: #ea7514;
+                    height: 36px;
+                }
+                li{
+                    float: left;
+                    width: 140px;
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    margin-left: 0px;
+                    background: #efefef;
+                    border-right: 1px solid #fff;
+                    cursor: pointer;
+                    font-family: Tahoma, Geneva, sans-serif;
+                }
+            }
+        }
+        .dhezi{
+            width: 775px;
+            .content{
+                img{
                 }
             }
         }
